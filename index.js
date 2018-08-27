@@ -17,6 +17,7 @@ function getRepositories() {
   req.addEventListener("load", displayRepositories);
   req.open("GET", url)
   req.send()
+  return false;
 }
 
 function getCommits(el) {
